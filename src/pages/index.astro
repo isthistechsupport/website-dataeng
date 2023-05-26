@@ -1,15 +1,26 @@
 ---
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<meta charset="utf-8" />
+
+<script type="text/javascript">
+    let lang = window.navigator.languages
+        ? window.navigator.languages[0]
+        : null;
+    lang =
+        lang ||
+        window.navigator.language ||
+        window.navigator.browserLanguage ||
+        window.navigator.userLanguage;
+
+    let shortLang = lang;
+    if (shortLang.indexOf("-") !== -1) shortLang = shortLang.split("-")[0];
+
+    if (shortLang.indexOf("_") !== -1) shortLang = shortLang.split("_")[0];
+
+    if (shortLang === "es") {
+        window.location.replace("./" + shortLang + "/index.html");
+    } else {
+        window.location.replace("./en/index.html");
+    }
+</script>
