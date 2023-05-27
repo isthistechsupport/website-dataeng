@@ -2,18 +2,19 @@ function toggleDarkMode() {
     const body = document.querySelector('body');
     const container = document.querySelector('.container');
     const themeContainer = document.getElementById('dark-mode-toggle');
-    const themeIcon = document.getElementById('theme-icon');
     const sectionHeadings = document.querySelectorAll('.section-heading');
     const sectionContent = document.querySelectorAll('.section-content');
-    //sun taken from https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg
-    //moon taken from https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg
-    const sun = "/src/images/sun.svg";
-    const moon = "/src/images/moon.svg"
+    const dropbtn = document.getElementById('language-dropdown-toggle');
+    const langSvg = document.querySelector('.language-icon');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
 
     body.classList.toggle('dark-mode');
     container.classList.toggle('dark-mode');
     themeContainer.classList.toggle('dark-mode');
-    themeIcon.src = themeIcon.src === sun ? moon : sun;
+    dropbtn.classList.toggle('dark-mode');
+    langSvg.classList.toggle('dark-mode');
+    dropdownContent.classList.toggle('dark-mode');
 
     sectionHeadings.forEach((heading) => {
         heading.classList.toggle('dark-mode');
@@ -22,36 +23,36 @@ function toggleDarkMode() {
     sectionContent.forEach((content) => {
         content.classList.toggle('dark-mode');
     });
+
+    dropdownItems.forEach((item) => {
+        item.classList.toggle('dark-mode');
+    });
 }
 
 document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
 
-function toggleDropdown() {
-    const dropdownMenu = document.getElementById('languageMenu');
-    dropdownMenu.classList.toggle('show');
-}
-
-function changeLanguage(lang) {
-    let url;
-
-    if (lang === 'en') {
-        url = 'index.en.html';
-    } else if (lang === 'es') {
-        url = 'index.es_CO.html';
-    }
-
-    if (url) {
-        window.location.href = url;
-    }
-}
-
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 
-hamburger.addEventListener('click', () => {
-    nav.classList.toggle('show')
-})
+const dropbtn = document.getElementById('language-dropdown-toggle');
+//const langSvg = document.querySelector('.language-icon-path');
 
-hamburger.addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.toggle('expanded');
+dropbtn.addEventListener('click', () => {
+    document.querySelector(".dropdown-content").classList.toggle('show');
+});
+
+langSvg.addEventListener('click', () => {
+    document.querySelector(".dropdown-content").classList.toggle('show');
+});
+
+// Close the dropdown menu if the user clicks outside of it
+window.addEventListener('click', (event) => {
+    if (!event.target.matches('.dropdown-button')) {
+        const dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach((dropdown) => {
+            if (dropdown.classList.contains('show')) {
+                dropdown.classList.remove('show');
+            }
+        });
+    }
 });

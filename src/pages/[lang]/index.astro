@@ -16,7 +16,7 @@ export function getStaticPaths() {
 const lang = extractRouteLangCode(Astro.url.toString());
 ---
 
-<Layout pageTitle={t("pageTitle", "", lang)} profilePicture={profilePicture}>
+<Layout pageTitle={t("pageTitle", "", lang)} profilePicture={profilePicture} lang={lang}>
 	<div>
 		<h2 id="about">{t("aboutMeTitle", "", lang)}</h2>
 		<p>
