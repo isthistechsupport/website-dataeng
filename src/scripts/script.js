@@ -35,13 +35,8 @@ const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 
 const dropbtn = document.getElementById('language-dropdown-toggle');
-//const langSvg = document.querySelector('.language-icon-path');
 
 dropbtn.addEventListener('click', () => {
-    document.querySelector(".dropdown-content").classList.toggle('show');
-});
-
-langSvg.addEventListener('click', () => {
     document.querySelector(".dropdown-content").classList.toggle('show');
 });
 
