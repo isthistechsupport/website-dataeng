@@ -31,13 +31,18 @@ function toggleDarkMode() {
 
 document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
 
-const hamburger = document.querySelector('.hamburger');
+const hamburger = document.getElementById('hamburger');
 const nav = document.querySelector('nav');
 
 const dropbtn = document.getElementById('language-dropdown-toggle');
 
-dropbtn.addEventListener('click', () => {
-    document.querySelector(".dropdown-content").classList.toggle('show');
+hamburger.addEventListener('click', () => {
+    document.querySelectorAll("nav").forEach((element) => {
+        element.classList.toggle('show');
+    });
+    document.querySelectorAll(".nav-links").forEach((element) => {
+        element.classList.toggle('show');
+    });
 });
 
 // Close the dropdown menu if the user clicks outside of it

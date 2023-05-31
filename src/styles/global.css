@@ -89,7 +89,7 @@ a {
     transition: transform 0.3s ease
 }
 
-.expanded {
+.show {
     display: unset;
 }
 
@@ -147,7 +147,7 @@ footer {
     gap: 1rem;
     margin-top: 2rem;
     font-size: small;
-    color: #777;
+    color: #484848;
     transition: color 0.3s ease-in-out;
 }
 
@@ -156,7 +156,7 @@ footer p {
 }
 
 footer a {
-    color: #777 !important;
+    color: #484848 !important;
     transition: color 0.3s ease-in-out;
     text-decoration: underline;
 }
