@@ -22,13 +22,13 @@ h1 {
 
 p {
     line-height: 2;
-    text-align: justify;
+    text-align: left;
     font-size: large;
 }
 
 li {
     line-height: 2;
-    text-align: justify;
+    text-align: left;
     font-size: large;
 }
 
@@ -144,11 +144,13 @@ nav.show .nav-links {
     p {
         line-height: 1.5;
         text-align: justify;
+        font-size: medium;
     }
     
     li {
         line-height: 1.5;
         text-align: justify;
+        font-size: medium;
     }    
 }
 
