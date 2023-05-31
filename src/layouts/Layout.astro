@@ -1,6 +1,6 @@
 ---
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import { Image } from "@astrojs/image/components";
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
 const { profilePicture } = Astro.props;
@@ -17,9 +17,16 @@ const { lang } = Astro.props;
     </head>
     <body>
         <div class="container">
-            <Header lang={lang}/>
+            <Header lang={lang} />
             <h1 class="title">{pageTitle}</h1>
-            <img class="picture" src={profilePicture} alt="Profile Picture" />
+            <Image
+                class="picture"
+                src={profilePicture}
+                alt="Profile Picture"
+                width={200}
+                height={200}
+                fit={"cover"}
+            />
 
             <slot />
             <script>
