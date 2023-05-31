@@ -16,7 +16,11 @@ export function getStaticPaths() {
 const lang = extractRouteLangCode(Astro.url.toString());
 ---
 
-<Layout pageTitle={t("pageTitle", "", lang)} profilePicture={profilePicture} lang={lang}>
+<Layout
+	pageTitle={t("pageTitle", "", lang)}
+	profilePicture={profilePicture}
+	lang={lang}
+>
 	<div>
 		<h2 id="about">{t("aboutMeTitle", "", lang)}</h2>
 		<p>
@@ -50,42 +54,52 @@ const lang = extractRouteLangCode(Astro.url.toString());
 				<Link
 					link="https://github.com/isthistechsupport/tootbot"
 					text={t("portfolioText.tootbot.link", "", lang)}
-				/>
+				/>.
 			</li>
 			<li>
 				{t("portfolioText.cubeposter.desc", "", lang)}
 				<Link
 					link="https://github.com/isthistechsupport/shitposting-cube/"
 					text={t("portfolioText.cubeposter.link", "", lang)}
-				/>
+				/>.
 			</li>
 			<li>
 				{t("portfolioText.ttsForDiscord.desc", "", lang)}
 				<Link
 					link="https://github.com/isthistechsupport/tts_for_discord/"
 					text={t("portfolioText.ttsForDiscord.link", "", lang)}
-				/>
+				/>.
 			</li>
 			<li>
 				{t("portfolioText.geih.desc", "", lang)}
 				<Link
 					link="https://github.com/isthistechsupport/geih/"
 					text={t("portfolioText.geih.link", "", lang)}
-				/>
+				/>.
 			</li>
 			<li>
 				{t("portfolioText.sqlScripts.desc", "", lang)}
 				<Link
 					link="https://github.com/isthistechsupport/sql-server-scripts/"
 					text={t("portfolioText.sqlScripts.link", "", lang)}
-				/>
+				/>.
 			</li>
 			<li>
 				{t("portfolioText.mset.desc", "", lang)}
 				<Link
 					link="https://github.com/isthistechsupport/mset/"
 					text={t("portfolioText.mset.link", "", lang)}
-				/>
+				/>.
+			</li>
+			<li>
+				{t("portfolioText.website.desc", "", lang)}
+				<Link link="https://astro.build/" text="Astro" />{
+					t("portfolioText.website.desc2", "", lang)
+				}
+				<Link
+					link="https://github.com/isthistechsupport/website-dataeng/"
+					text={t("portfolioText.website.link", "", lang)}
+				/>.
 			</li>
 			<li>
 				{t("portfolioText.github.desc", "", lang)}
@@ -189,13 +203,29 @@ const lang = extractRouteLangCode(Astro.url.toString());
 		<Link link="https://openai.com/product/chatgpt" text="ChatGPT" />{
 			t("footerText2", "", lang)
 		}
-		<Link link={t("footerLink1", "", lang)} text={t("footerText3", "", lang)} />
-		{t("footerText4", "", lang)} 
+		<Link
+			link={t("footerLink1", "", lang)}
+			text={t("footerText3", "", lang)}
+		/>
+		{t("footerText4", "", lang)}
 		<Link
 			link={t("footerLink2", "", lang)}
 			text={t("footerText5", "", lang)}
 		/>
 		{t("footerText6", "", lang)}
 		<Link link="https://codepen.io/" text="codepen.io" />.
+		{t("footerText7", "", lang)}
+		<Link
+			link="https://www.iconarchive.com/show/free-simple-line-icons-by-justicon/Development-Interface-Computer-Photo-Gear-Browser-icon.html"
+			text={t("footerText8", "", lang)}
+		/>
+		{t("footerText9", "", lang)}
+		<Link link="https://www.behance.net/justicon" text="Just Icon" />{
+			t("footerText10", "", lang)
+		}
+		<Link
+			link="https://creativecommons.org/licenses/by/3.0/"
+			text="CC BY 3.0"
+		/>.
 	</Footer>
 </Layout>

@@ -43,6 +43,11 @@
             "desc": "Una implementación de un renderizador del conjunto de Mandelbrot en F# (mi lenguaje secundario favorito) que está disponible",
             "link": "aquí"
         },
+        "website": {
+            "desc": "Este sitio, que fue desarrollado con ",
+            "desc2": ", y cuyo código fuente está disponible ",
+            "link": "aquí"
+        },
         "github": {
             "desc": "Echa un vistazo a",
             "link": "mi GitHub",
@@ -84,5 +89,9 @@
     "footerText5": "Alireza Mohammadi",
     "footerText6": " en ",
     "footerLink1": "https://codepen.io/alireza82/pen/poRqBOq",
-    "footerLink2": "https://www.linkedin.com/in/wwwalireza/"
+    "footerLink2": "https://www.linkedin.com/in/wwwalireza/",
+    "footerText7": "Favicon tomado de ",
+    "footerText8": "aquí",
+    "footerText9": " por ",
+    "footerText10": ", bajo la licencia "
 }

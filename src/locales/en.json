@@ -43,6 +43,11 @@
             "desc": "An implementation of a Mandelbrot set renderer in F# (my favorite side language) that is available",
             "link": "here"
         },
+        "website": {
+            "desc": "This website, which was built in ",
+            "desc2": ", and you can find the source code for it ",
+            "link": "here"
+        },
         "github": {
             "desc": "Check out",
             "link": "my GitHub",
@@ -84,5 +89,9 @@
     "footerText5": "pen",
     "footerText6": " at ",
     "footerLink1": "https://www.linkedin.com/in/wwwalireza/",
-    "footerLink2": "https://codepen.io/alireza82/pen/poRqBOq"
+    "footerLink2": "https://codepen.io/alireza82/pen/poRqBOq",
+    "footerText7": "Favicon taken from ",
+    "footerText8": "here",
+    "footerText9": " by ",
+    "footerText10": ", licensed under "
 }
