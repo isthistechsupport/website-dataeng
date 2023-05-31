@@ -32,21 +32,21 @@
             "link": "TTS for Discord"
         },
         "geih": {
-            "desc": "A page to know where your salary would rank you in my country (which is still WIP, but you can find the backend analysis",
-            "link": "here"
+            "desc": "A page to know where your salary would rank you in my country (which is still WIP, but you can find the",
+            "link": "backend analysis here"
         },
         "sqlScripts": {
-            "desc": "A compilation of useful Microsoft SQL Server scripts that you can find",
-            "link": "here"
+            "desc": "A compilation of useful",
+            "link": "Microsoft SQL Server scripts"
         },
         "mset": {
             "desc": "An implementation of a Mandelbrot set renderer in F# (my favorite side language) that is available",
-            "link": "here"
+            "link": "on my GitHub"
         },
         "website": {
             "desc": "This website, which was built in ",
-            "desc2": ", and you can find the source code for it ",
-            "link": "here"
+            "desc2": ", and you can find",
+            "link": "the source code for here"
         },
         "github": {
             "desc": "Check out",
@@ -59,8 +59,8 @@
         "cta": {
             "desc": "If you like what I do enough to want me to do something for you, great! I also do all sorts of technical consulting work with my firm",
             "link": "Pidgin",
-            "desc2": "and I'm pretty sure I can help you out. See my contact details",
-            "link2": "below"
+            "desc2": "and I'm pretty sure I can help you out. See",
+            "link2": "my contact details below"
         }
     },
     "interestsTitle": "Things I'm learning (or know but haven't used at work)",

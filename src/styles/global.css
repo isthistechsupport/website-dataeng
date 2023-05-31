@@ -21,13 +21,15 @@ h1 {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 2;
     text-align: justify;
+    font-size: large;
 }
 
 li {
-    line-height: 1.5;
+    line-height: 2;
     text-align: justify;
+    font-size: large;
 }
 
 a {
@@ -138,6 +140,16 @@ nav.show .nav-links {
     .hamburger {
         display: none;
     }
+
+    p {
+        line-height: 1.5;
+        text-align: justify;
+    }
+    
+    li {
+        line-height: 1.5;
+        text-align: justify;
+    }    
 }
 
 /* Footer styles */
