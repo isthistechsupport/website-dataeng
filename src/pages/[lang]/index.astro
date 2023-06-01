@@ -18,6 +18,7 @@ const lang = extractRouteLangCode(Astro.url.toString());
 
 <Layout
 	pageTitle={t("pageTitle", "", lang)}
+	pageDescription={t("pageDescription", "", lang)}
 	profilePicture={profilePicture}
 	lang={lang}
 >
