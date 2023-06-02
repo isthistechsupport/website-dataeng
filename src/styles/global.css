@@ -225,9 +225,9 @@ body.dark-mode a:hover {
 /* Dark mode button styles */
 .theme-container.dark-mode {
     background: linear-gradient(145deg, #23282c, #1e2125);
-    box-shadow: 17px 17px 23px #1a1d20,
-        -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
-        inset -5px -5px 4px #24282c;
+    box-shadow:
+        inset 7px 7px 3px #1e2226,
+        inset -11px -11px 3px #1c1f24;
 }
 
 .dark-mode-toggle {
@@ -269,73 +269,4 @@ body.dark-mode .dark-mode-toggle:hover {
 
 .language-icon.dark-mode{
     fill: #f1f1f1;
-}
-
-/* Dropdown Button */
-.dropdown-button {
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    background: #ffffff;
-    column-gap: .25rem;
-    align-items: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
-        inset 7px 7px 3px rgba(209, 217, 230, 0.35),
-        inset -11px -11px 3px rgba(255, 255, 255, 0.3)
-}
-
-.dropdown-button.dark-mode {
-    background: linear-gradient(145deg, #23282c, #1e2125);
-    box-shadow: 17px 17px 23px #1a1d20,
-        -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
-        inset -5px -5px 4px #24282c;
-    color: #f1f1f1;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.language-dropdown {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    display: block;
-}
-
-.dropdown-item {
-    margin: 10px;
-    cursor: pointer;
-    border: 0;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.dropdown-item.dark-mode {
-    background-color: #333;
-    color: #f1f1f1;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    padding: 0;
-    list-style: none;
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    z-index: 1;
-}
-
-.dropdown-content.dark-mode {
-    background-color: #333;
-    color: #f1f1f1;
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-    display: flex;
-    flex-direction: column;
 }
