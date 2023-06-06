@@ -33,8 +33,9 @@
             "link": "TTS for Discord"
         },
         "geih": {
-            "desc": "A page to know where your salary would rank you in my country (which is still WIP, but you can find the",
-            "link": "backend analysis here"
+            "desc": "A page to know how close to the 1% top earners would you be in my country called",
+            "link": "salary-o-meter",
+            "desc2": " (which currently is only in Spanish and uses Colombian pesos)"
         },
         "sqlScripts": {
             "desc": "A compilation of useful",

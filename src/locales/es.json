@@ -33,8 +33,9 @@
             "link": "TTS para Discord"
         },
         "geih": {
-            "desc": "Una página para saber dónde te clasificaría tu salario en mi país (que sigue en progreso, pero puedes encontrar ",
-            "link": "el análisis de fondo aquí"
+            "desc": "Una página para saber qué tan cerca estarías del 1% con más ingresos en mi país llamada",
+            "link": "Salariómetro",
+            "desc2": ""
         },
         "sqlScripts": {
             "desc": "Una compilación de",
