@@ -1,6 +1,6 @@
 ---
 import Header from "../components/Header.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from 'astro:assets';
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
 const { pageDescription } = Astro.props;
@@ -55,7 +55,6 @@ const { lang } = Astro.props;
                 alt="Profile Picture"
                 width={200}
                 height={200}
-                fit={"cover"}
             />
 
             <slot />

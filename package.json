@@ -13,7 +13,6 @@
 		"i18n:extract:keys": "astro-i18n extract:keys"
 	},
 	"dependencies": {
-		"@astrojs/image": "^0.16.9",
 		"astro": "^2.5.0",
 		"astro-i18n": "^1.8.1",
 		"sharp": "^0.32.1"
