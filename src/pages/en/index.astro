@@ -1,0 +1,219 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import Link from "../../components/Link.astro";
+import profilePicture from "../../images/profile.webp";
+import "../../styles/global.css";
+---
+
+<Layout
+	pageTitle="Diego Rivero – Data Scientist and Geospatial Engineer"
+	pageDescription="I'm Diego, a data scientist and geospatial engineer with lots of experience in GIS data analysis and transformations for BPO and Telecom. Nice to meet you!"
+	profilePicture={profilePicture}
+	lang="en"
+>
+	<div>
+		<h2 id="about">About me</h2>
+		<p>
+			I'm Diego, a data scientist and geospatial engineer working in the Telecom and BPO sectors. With 8 years of experience in databases, SQL, and geospatial data management, I lead ELT implementation, data warehousing, and data modeling. Skilled in SQL reporting with SSRS/Power BI. Native Spanish speaker and C2 certified in English. Passionate about all things data, especially geospatial data analysis. Open to new opportunities and collaborations.
+		</p>
+	</div>
+
+	<div>
+		<h2 id="skills">Things I know</h2>
+		<ul>
+			<li>Data pipeline development (dbt)</li>
+			<li>ELT (Extract, Load, Transform)</li>
+			<li>Data modeling and database design</li>
+			<li>SQL and NoSQL databases (Postgres, SQL Server, SQLite, Redis)</li>
+			<li>GIS – Geographic Information Systems (PostGIS, QGIS, ArcGIS)</li>
+			<li>Public clouds (AWS, Azure, DigitalOcean)</li>
+			<li>Cloud data management platforms (Databricks, Deepnote)</li>
+			<li>Programming languages (Python, SQL, C#)</li>
+			<li>Docker and containerization</li>
+			<li>Data visualization (Tableau, Power BI)</li>
+			<li>Data quality and testing</li>
+			<li>Lots of Excel (xlookup/vlookup, tables and pivot tables, embedded SQL queries, VBA)</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2 id="portfolio">Things I've done</h2>
+		<ul>
+			<li>
+				A fork of a bot to repost memes to Twitter called
+				<Link
+					link="https://github.com/isthistechsupport/tootbot"
+					text="Tootbot"
+				/>.
+			</li>
+			<li>
+				A page that makes anything you write into a cube in markdown code block format called
+				<Link
+					link="https://github.com/isthistechsupport/shitposting-cube/"
+					text="Cubeposter"
+				/>.
+			</li>
+			<li>
+				A bot that takes text and reads it out loud on Discord using Azure called
+				<Link
+					link="https://github.com/isthistechsupport/tts_for_discord/"
+					text="TTS for Discord"
+				/>.
+			</li>
+			<li>
+				A page to know how close to the 1% top earners would you be in my country called
+				<Link
+					link="https://geih.drivero.com.co/"
+					text="salary-o-meter"
+				/>
+				(which currently is only available in Spanish and uses Colombian pesos)
+			</li>
+			<li>
+				A compilation of useful
+				<Link
+					link="https://github.com/isthistechsupport/sql-server-scripts/"
+					text="Microsoft SQL Server scripts"
+				/>.
+			</li>
+			<li>
+				An implementation of a Mandelbrot set renderer in F# (my favorite side language) that is available
+				<Link
+					link="https://github.com/isthistechsupport/mset/"
+					text="on my GitHub"
+				/>.
+			</li>
+			<li>
+				This website, which was built in 
+				<Link link="https://astro.build/" text="Astro"/>
+				, and you can find
+				<Link
+					link="https://github.com/isthistechsupport/website-dataeng/"
+					text="the source code for it here"
+				/>.
+			</li>
+			<li>
+				Check out
+				<Link
+					link="https://github.com/isthistechsupport/"
+					text="my GitHub"
+				/>
+				to see what other (open source) things I've done!
+			</li>
+			<li>
+				I've also done a lot of closed source work on the technical side of management consulting for the telecom & tech industry, plus a lot of data pipelines and data management (and people management, too) for the BPO industry.
+			</li>
+			<li>
+				If you like what I do enough to want me to do something for you, great! I also do all sorts of technical consulting work as a freelancer
+				and I'm pretty sure I can help you out. See <a href="#contact">my contact details below</a>.
+			</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2 id="interests">
+			Things I'm learning (or know but haven't used at work)
+		</h2>
+		<ul>
+			<li>
+				<Link link="https://fsharp.org/" text="F Sharp" />
+			</li>
+			<li>
+				<Link link="https://lisp-lang.org/" text="Lisp" />
+			</li>
+			<li>
+				<Link link="https://www.prefect.io/" text="Prefect" />
+			</li>
+			<li>
+				<Link link="https://www.r-project.org/" text="R" />
+			</li>
+			<li>
+				<Link link="https://prql-lang.org/" text="PRQL" />
+			</li>
+			<li>
+				<Link link="https://kubernetes.io/" text="Kubernetes" />
+			</li>
+			<li>
+				<Link link="https://helm.sh/" text="Helm" />
+			</li>
+			<li>
+				<Link link="https://www.rust-lang.org/" text="Rust" />
+			</li>
+			<li>
+				<Link link="https://go.dev/" text="Go" />
+			</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2 id="likes">Things I like (enough to do them in my free time)</h2>
+		<ul>
+			<li>Functional programming</li>
+			<li>Reading – a lot of reading</li>
+			<li>World History & Geopolitics</li>
+			<li>Art, especially painting and classical music</li>
+			<li>Music, especially indie and alternative rock</li>
+			<li>Traveling</li>
+			<li>Landscape photography (I love sunsets)</li>
+			<li>Cooking (I especially love mediterranean cuisine, from Spain to Turkey)</li>
+			<li>Star Wars (I like the sequels more than the prequels)</li>
+			<li>
+				<Link
+					link="https://mikejacobsen.tumblr.com/post/58177900777/this-is-available-as-a-print-iphone-case-and"
+					text="This image of C-3PO as Ironman"
+				/>
+			</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2 id="contact">Contact</h2>
+		<ul>
+			<li>
+				Email: <a
+					href="mailto:diego@drivero.com.co">diego@drivero.com.co</a
+				>
+			</li>
+			<li>
+				LinkedIn: <Link
+					link="https://www.linkedin.com/in/diego-rivero-dataeng/"
+					text="linkedin.com/in/diego-rivero-dataeng"
+				/>
+			</li>
+		</ul>
+	</div>
+	<Footer>
+		Website designed and developed by Diego Rivero (with some help from 
+		<Link
+			link="https://openai.com/product/chatgpt"
+			text="ChatGPT"
+		/> and 
+		<Link
+			link="https://github.com/features/copilot"
+			text="GitHub Copilot"
+		/>). Dark mode button and icons adapted and taken from 
+		<Link
+			link="https://www.linkedin.com/in/wwwalireza/"
+			text="Alireza Mohammadi's"
+		/>
+		<Link
+			link="https://codepen.io/alireza82/pen/poRqBOq"
+			text="pen"
+		/>
+		 at 
+		<Link link="https://codepen.io/" text="codepen.io" />.
+		<Link
+			link="https://www.iconarchive.com/show/free-simple-line-icons-by-justicon/Development-Interface-Computer-Photo-Gear-Browser-icon.html"
+			text="Favicon"
+		/>
+		 by 
+		<Link
+			link="https://www.behance.net/justicon"
+			text="Just Icon"
+		/>, licensed under 
+		<Link
+			link="https://creativecommons.org/licenses/by/3.0/"
+			text="CC BY 3.0"
+		/>.
+	</Footer>
+</Layout>

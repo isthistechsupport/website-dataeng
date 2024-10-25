@@ -1,0 +1,225 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import Link from "../../components/Link.astro";
+import profilePicture from "../../images/profile.webp";
+import "../../styles/global.css";
+---
+
+<Layout
+	pageTitle="Diego Rivero – Científico de datos e ingeniero geoespacial"
+	pageDescription="Soy Diego, científico de datos e ingeniero geoespacial con mucha experiencia en análisis y transformaciones de datos SIG para BPO y Telecom. ¡Mucho gusto!"
+	profilePicture={profilePicture}
+	lang="es"
+>
+	<div>
+		<h2 id="about">Acerca de mí</h2>
+		<p>
+			Soy Diego, científico de datos e ingeniero geoespacial en la industria de Telecomunicaciones y BPO.
+			Con 8 años de experiencia en bases de datos, SQL, y manejo de datos geoespaciales, lidero la implementación
+			de sistemas ELT, almacenes de datos y modelado de datos. Experto en reportería con SQL y SSRS/Power BI.
+			Hablo español nativo e inglés C2 certificado. Apasionado por todo lo relacionado a datos, especialmente
+			al análisis de datos geoespaciales. Abierto a nuevas oportunidades y colaboraciones.
+		</p>
+	</div>
+
+	<div>
+		<h2 id="skills">Cosas que sé</h2>
+		<ul>
+			<li>Desarrollo de pipelines de datos (dbt)</li>
+			<li>ELT (Extraer, Cargar, Transformar)</li>
+			<li>Modelado de datos y diseño de bases de datos</li>
+			<li>Bases de datos SQL y NoSQL (Postgres, SQL Server, SQLite, Redis)</li>
+			<li>SIG – Sistemas de información geográfica (PostGIS, QGIS, ArcGIS)</li>
+			<li>Nubes públicas (AWS, Azure, DigitalOcean)</li>
+			<li>Plataformas de gestión de datos en la nube (Databricks, Deepnote)</li>
+			<li>Lenguajes de programación (Python, SQL, C#)</li>
+			<li>Docker y contenedorización</li>
+			<li>Visualización de datos (Tableau, Power BI)</li>
+			<li>Pruebas y calidad de los datos</li>
+			<li>Mucho Excel (buscarx/buscarv, tablas y tablas dinámicas, consultas de SQL embebidas, VBA)</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2 id="portfolio">Cosas que he hecho</h2>
+		<ul>
+			<li>
+				Un fork de un bot para repostear memes en Twitter llamado
+				<Link
+					link="https://github.com/isthistechsupport/tootbot"
+					text="Tootbot"
+				/>.
+			</li>
+			<li>
+				Una página que convierte todo lo que escribes en un cubo en formato de bloque de código markdown llamada
+				<Link
+					link="https://github.com/isthistechsupport/shitposting-cube/"
+					text="Cubeposter"
+				/>.
+			</li>
+			<li>
+				Un bot que toma texto y lo lee en voz alta en Discord usando Azure llamado
+				<Link
+					link="https://github.com/isthistechsupport/tts_for_discord/"
+					text="TTS para Discord"
+				/>.
+			</li>
+			<li>
+				Una página para saber qué tan cerca estarías del 1% con más ingresos en mi país llamada
+				<Link
+					link="https://geih.drivero.com.co/"
+					text="Salariómetro"
+				/> (actualmente disponible en pesos colombianos).
+			</li>
+			<li>
+				Una compilación de
+				<Link
+					link="https://github.com/isthistechsupport/sql-server-scripts/"
+					text="scripts útiles de Microsoft SQL Server"
+				/>.
+			</li>
+			<li>
+				Una implementación de un renderizador del conjunto de Mandelbrot en F# (mi lenguaje secundario favorito) que está disponible
+				<Link
+					link="https://github.com/isthistechsupport/mset/"
+					text="en mi GitHub"
+				/>.
+			</li>
+			<li>
+				Este sitio, que fue desarrollado con 
+				<Link link="https://astro.build/" text="Astro" />
+				, y
+				<Link
+					link="https://github.com/isthistechsupport/website-dataeng/"
+					text="cuyo código fuente está disponible aquí"
+				/>.
+			</li>
+			<li>
+				¡Echa un vistazo a
+				<Link
+					link="https://github.com/isthistechsupport/"
+					text="mi GitHub"
+				/>
+				para ver qué otras cosas (de código abierto) he hecho!
+			</li>
+			<li>
+				También he hecho mucho trabajo de código cerrado en la parte técnica de management consulting para la industria de telecomunicaciones y tecnología, además de bastantes diseños de pipelines de datos y manejo de datos (y también manejo de personal) para la industria de BPO.
+			</li>
+			<li>
+				Si te gusta lo que hago lo suficiente como para querer que haga algo por ti, ¡genial! También hago todo tipo de trabajos de consultoría técnica como freelance,
+				y estoy bastante seguro de que puedo ayudarte.
+				<a href="#contact">Mira mis datos de contacto abajo</a>.
+			</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2 id="interests">
+			Cosas que estoy aprendiendo (o sé pero que no he usado en el trabajo)
+		</h2>
+		<ul>
+			<li>
+				<Link link="https://fsharp.org/" text="F Sharp" />
+			</li>
+			<li>
+				<Link link="https://lisp-lang.org/" text="Lisp" />
+			</li>
+			<li>
+				<Link link="https://www.prefect.io/" text="Prefect" />
+			</li>
+			<li>
+				<Link link="https://www.r-project.org/" text="R" />
+			</li>
+			<li>
+				<Link link="https://prql-lang.org/" text="PRQL" />
+			</li>
+			<li>
+				<Link link="https://kubernetes.io/" text="Kubernetes" />
+			</li>
+			<li>
+				<Link link="https://helm.sh/" text="Helm" />
+			</li>
+			<li>
+				<Link link="https://www.rust-lang.org/" text="Rust" />
+			</li>
+			<li>
+				<Link link="https://go.dev/" text="Go" />
+			</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2 id="likes">Cosas que me gustan (lo suficiente para hacerlas en mi tiempo libre)</h2>
+		<ul>
+			<li>La programación funcional</li>
+			<li>Los libros – y bastante</li>
+			<li>La historia mundial y geopolítica</li>
+			<li>El arte, especialmente la pintura y música clásica</li>
+			<li>La música, especialmente indie y rock alternativo</li>
+			<li>Viajar</li>
+			<li>La fotografía de paisajes (me encantan las puestas de sol)</li>
+			<li>Cocinar (me encanta especialmente la cocina mediterránea, desde España hasta Turquía)</li>
+			<li>Star Wars (me gustan las secuelas más que las precuelas)</li>
+			<li>
+				<Link
+					link="https://mikejacobsen.tumblr.com/post/58177900777/this-is-available-as-a-print-iphone-case-and"
+					text="Esta imagen de C-3PO como Ironman"
+				/>
+			</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2 id="contact">Contacto</h2>
+		<ul>
+			<li>
+				Correo electrónico: <a
+					href="mailto:diego@drivero.com.co">diego@drivero.com.co</a
+				>
+			</li>
+			<li>
+				LinkedIn: <Link
+					link="https://www.linkedin.com/in/diego-rivero-dataeng/"
+					text="linkedin.com/in/diego-rivero-dataeng"
+				/>
+			</li>
+		</ul>
+	</div>
+	<Footer>
+		Sitio web diseñado y desarrollado por Diego Rivero (con algo de ayuda de 
+		<Link
+			link="https://openai.com/product/chatgpt"
+			text="ChatGPT"
+		/>
+		y
+		<Link
+			link="https://github.com/features/copilot"
+			text="Copilot de GitHub"
+		/>). Botón de modo oscuro e iconos adaptados y tomados del
+		<Link
+			link="https://codepen.io/alireza82/pen/poRqBOq"
+			text="pen"
+		/>
+		de
+		<Link
+			link="https://www.linkedin.com/in/wwwalireza/"
+			Alireza Mohammadi
+		/>
+		en
+		<Link link="https://codepen.io/" text="codepen.io" />.
+		<Link
+			link="https://www.iconarchive.com/show/free-simple-line-icons-by-justicon/Development-Interface-Computer-Photo-Gear-Browser-icon.html"
+			text="Favicon"
+		/>
+		por
+		<Link
+			link="https://www.behance.net/justicon"
+			text="Just Icon"
+		/>, bajo la licencia
+		<Link
+			link="https://creativecommons.org/licenses/by/3.0/"
+			text="CC BY 3.0"
+		/>.
+	</Footer>
+</Layout>

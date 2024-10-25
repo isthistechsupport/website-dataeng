@@ -1,20 +1,17 @@
 {
-	"name": "",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro",
-		"i18n:install": "astro-i18n install",
-		"i18n:sync": "astro-i18n sync",
-		"i18n:extract:keys": "astro-i18n extract:keys"
-	},
-	"dependencies": {
-		"astro": "^2.5.0",
-		"astro-i18n": "^1.8.1",
-		"sharp": "^0.32.1"
-	}
+  "name": "website-dataeng",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.7",
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.6.3"
+  }
 }
