@@ -177,7 +177,7 @@ footer a {
 
 /* Dark mode footer styles */
 body.dark-mode .footer {
-    color: #f1f1f1;
+    color: #f1f1f1 !important;
 }
 
 body.dark-mode .footer a {
