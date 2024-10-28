@@ -176,16 +176,16 @@ footer a {
 }
 
 /* Dark mode footer styles */
-body.dark-mode .footer {
+body.dark-mode footer {
     color: #f1f1f1 !important;
 }
 
-body.dark-mode .footer a {
+body.dark-mode footer a {
     color: #f1f1f1;
     text-decoration: underline;
 }
 
-body.dark-mode .footer a:hover {
+body.dark-mode footer a:hover {
     color: #ccc;
 }
 
